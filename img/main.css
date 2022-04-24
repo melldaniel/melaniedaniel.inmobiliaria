@@ -55,15 +55,16 @@ header{
 
 h1{
     font-size: 50px;
-    color: rgb(49, 46, 49);
+    color: rgb(49, 46, 49)  ;
     font-family: 'sans-serif','Times New Roman', 'Times', 'serif';
+    
 }
 
 
 h2{
     font-size: 35px;
     color: rgb(248, 249, 250);
-    
+    background-color: aqua;
 }
 
 h3{
@@ -151,7 +152,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+  }
 
 
 
@@ -170,8 +171,17 @@ ul li{
 li{
     color: rgb(6, 7, 7);
     font-size: 30px;
-   
+    transition: all .3s ease-in-out;
+
 }
+
+
+li:hover{
+    background-color: rgb(157, 255, 0);
+}
+
+
+
 
 
 .whats-app{
@@ -180,20 +190,6 @@ li{
     bottom: 80px;
     border:100px;
 }
-
-a{
-    color: rgb(109, 105, 105);
-   
-    transition: all 2s easy-in- out;
-    
-}
-
-a:hover{ 
-   color:  rgb(207, 72, 207);
-   background-color: rgb(224, 224, 207);
-  
-  }
-
 
 
 
@@ -205,13 +201,8 @@ img.comercial{
     border: solid;
     border-color: rgb(109, 105, 105);
     border-radius: 25px;
-    
+
 }
-
-
-
-
-
 
 .itemimg{
     width: 80%;
@@ -294,6 +285,8 @@ section{
     flex-direction:column;
     align-items: center;
    
+    
+
 }
 
 
@@ -435,34 +428,12 @@ input{
 th{
     font-size: 26px;
 }
-
 tr{
     font-size: 20px;
 }
 
 .iconos{
-    margin: 40px 40px 40px 40px;
-    transition: all 4.s easy-in-out;
-}
-
-.iconos:hover{
-    transform: scale(2);
-}
-
-.destacadas{
-
-    padding: 10px;
-    margin: 20px 15px 10px 5px;
-    border-color: rgb(109, 105, 105);
-    border-radius: 25px;
-    border: solid;
-    float:left;
-    transition: all 4.s easy-in-out;
-}
-
-.destacadas:hover{
-
-    transform: scale(1.3);
+    margin: 20px 20px 20px 20px
 }
 
 
@@ -620,8 +591,6 @@ tr{
     }
     
     
-
-
     .img.comercial{
         width: 80%;
         padding: 10px;
@@ -750,7 +719,7 @@ table{
 
 
 
-
+}
 
 
 
@@ -782,7 +751,9 @@ article{
         grid-area: desart;
         background-color: rgb(200, 158, 206);
     
-  }
+                            
+                        
+    }
                                 
                         
 .emp{   grid-area: emp;
@@ -795,12 +766,17 @@ article{
 .comercial{
           grid-area: comercial;
         
-}
+                      
+                           
+ }
                         
 .masinfo{
                           
     grid-area: masinfo;
    
+                        
+
+
    }
 
 
